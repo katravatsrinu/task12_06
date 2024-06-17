@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarking</title>
+    <style>
+        table {
+            width: 45%;
+            float: left;
+            margin-right: 5%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(105, 51, 150);
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bookmarking Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>LINKS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="javascript:void(0);" onclick="showInfo('Narendra Modi was born on 17th September 1950. The birthplace of Narendra Modi is Vadnagar, Mehsana district, Bombay State (present-day Gujarat). For your information, Narendra Modi’s full name is Narendra Damodardas ModiMoreover, his father’s name was Mool Chand Modi and his Mother is Hiraben. Narendra Modi always belonged to a middle-class family. His engagement with Jasoda Ben Chaman Lal took place at the age of 13. However, he got married at the age of 17Furthermore, Modi joined RSS( Rashtriya Swayamsewak Sangh). He worked in it for several years. Also during his service, he played important roles in serving the people. Narendra Nodi started working really hard from an early age. Moreover, he has also represented as a true Hindu, because of which he is a role model for many')" style="text-decoration: none;">Information 1</a></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:void(0);" onclick="showInfo(' Virat Kohli (Hindi pronunciation: Virat kohli  ; born 5 November 1988) is an Indian international cricketer and the former captain of the Indian national cricket team. He is a right-handed batsman and an occasional medium-fast bowler.')" style="text-decoration: none;">Information 2</a></td>
+            </tr>
+            <tr>
+                <td><a href="javascript:void(0);" onclick="showInfo('Information 3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aperiam, laudantium nostrum harum est unde? Repellat molestiae tempora cupiditate odio reiciendis perferendis adipisci dicta, unde tempore sed maxime consequatur corporis?')" style="text-decoration: none;">Information 3</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="infoTable">
+        <thead>
+            <tr>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="infoContent"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function showInfo(info) {
+            document.getElementById('infoContent').innerText = info;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        .head1 {
+            font-size: 40px;
+            color: #940099;
+            font-weight: bold;
+        }
+
+        .head2 {
+            font-size: 17px;
+            margin-left: 10px;
+            margin-bottom: 15px;
+        }
+
+        body {
+            margin: 0 auto;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0;
+            background-color: #008299;
+            padding: 10px 0px 10px 0px;
+            color: white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+
+        footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .body_sec {
+            display: flex;
+            margin: 20px;
+        }
+
+        .content-section {
+            flex: 3;
+            margin-right: 20px;
+            background-color: #e0f7fa;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .article-section {
+            margin-bottom: 20px;
+            background-color: #83ff3b;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .aside-section {
+            flex: 1;
+            background-color: #c8e6c9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1" style="text-align: center;">
+            JHAPLUU
+        </div>
+        <div class="head2" style="text-align: center ;">
+            Leader of cackroach ganggg
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="#home">HOME</a>
+        <a href="#news">NEWS</a>
+        <a href="#notification">NOTIFICATIONS</a>
+        <div class="menu-log">
+            <a href="#login">LOGIN</a>
+        </div>
+    </nav>
+    <main class="body_sec">
+        <section class="content-section" id="Content">
+            <h3>Content Section</h3>
+            <article class="article-section">
+                <h4>Article 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum vitae iure corrupti quos unde doloribus quaerat quia totam animi consectetur. Rem ullam architecto error enim perspiciatis, quod eligendi debitis possimus?</p>
+            </article>
+            <article class="article-section">
+                <h4>Article 2</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure tempore quisquam eaque commodi facilis error ullam et esse eveniet asperiores? Officiis est veniam impedit voluptates velit? Voluptatibus alias excepturi facilis.</p>
+            </article>
+        </section>
+        <aside class="aside-section">
+            <h4>Aside Section</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatum sed qui, iste itaque voluptas officia quidem aspernatur! Reprehenderit esse odit impedit consequuntur suscipit velit nemo illum quis delectus pariatur.</p>
+        </aside>
+    </main>
+    <footer>Thank You</footer>
+</body>
+</html>
